@@ -19,8 +19,8 @@ spec:
         image: cytopia/bind
         env:
         - name: DOCKER_LOGS
-          value: 1
+          value: "1" # Enclose numeric value in quotes to ensure it's interpreted as a string
         - name: ALLOW_QUERY
-          value: any
+          value: "any" # Enclose string value in quotes
         ports:
         - containerPort: 53
